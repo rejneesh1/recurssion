@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+	   function test(n) {
+	       if (n == 1) return [0, 1];
+
+	       var arr = test(n - 1);
+	       arr.push(arr[n - 1] + arr[n - 2]);
+
+	       return arr
+	   }
+
+	   console.log(test(5))
+	</script>
+</body>
+</html>

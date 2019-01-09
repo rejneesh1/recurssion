@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+	    var sum = 0
+
+	    function arrSum(...arr) {
+	        while (arr.length > 0) {
+	            sum += arr[0]
+	            arr.shift();
+	            return arrSum(...arr);
+	        }
+	    }
+	    arrSum(5, 5)
+	    console.log(sum)
+
+	</script>
+</body>
+</html>

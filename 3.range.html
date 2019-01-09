@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+	    var arr = []
+
+	    function integer(x, y) {
+	        while (x !== y) {
+	            arr.push(x++)
+	            return integer(x, y)
+	        }
+	    }
+	    integer(2, 12);
+	    console.log(arr)
+
+	</script>
+</body>
+</html>

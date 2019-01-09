@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+	   function expo(base, pow) {
+	       if (pow === 0) {
+	           return 1;
+	       } else {
+	           return base * expo(base, pow - 1)
+	       }
+	   }
+
+	   console.log(expo(2, 3))
+	</script>
+</body>
+</html>

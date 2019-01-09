@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+		function isEven(x) {
+		    x = Math.abs(x)
+		    if (x == 2 || x == 0) {
+		        return true
+		    }
+		    if (x < 2) {
+		        return false
+		    }
+		    return isEven(x - 2)
+		}
+
+		console.log(isEven(200))
+	</script>
+</body>
+</html>

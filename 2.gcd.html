@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type = "text/javascript" >
+	    function gcd(a, b) {
+	        if (!b) {
+	            return a;
+	        }
+
+	        return gcd(b, a % b);
+	    };
+	    console.log(gcd(4, 30));
+
+
+	</script>
+</body>
+</html>
